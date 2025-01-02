@@ -1,0 +1,155 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "properties": {
+        "stair:rotation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "identifier": "palae:pcrinstu"
+    },
+    "components": {
+      "minecraft:friction": 0.6, //摩擦力
+      "minecraft:block_light_absorption": 0,
+      "minecraft:block_light_emission": 0.25,
+      "minecraft:entity_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:creative_category": { //分组
+        "category": "items"
+      },
+      "minecraft:pick_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:loot": "loot_tables/blocks/palae_pcrinstu.json",
+      "minecraft:material_instances": { //将模型中的面或渲染应用到方块实际的纹理
+        "*": {
+          "texture": "palae:pcrinstu",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:on_placed": {
+        "event": "palae:placed",
+        "target": "self"
+      },
+      "minecraft:on_player_destroyed": {
+        "event": "palae:on_destroy",
+        "target": "self"
+      },
+      "minecraft:map_color": "#FFFFFF", //在地图上显示的颜色
+      "minecraft:breathability": "solid", //定义该方块的透气性。当值为air时视为空气属性，当值为solid时视为固体属性。
+      "minecraft:destroy_time": 3, //设置挖掘该方块所需时间
+      "minecraft:on_step_on": {
+        "event": "palae:step_on",
+        "target": "self"
+      },
+      "minecraft:crafting_table": {
+        "grid_size": 3,
+        "custom_description": "PCR扩增", //定义合成界面显示的标题
+        "crafting_tags": [ //定义合成配方的标签，可同时拥有多个标签
+          "crafting_table",
+          "pcrinstu"
+        ]
+      },
+      "minecraft:on_step_off": {
+        "event": "palar:step_off",
+        "target": "self"
+      },
+      "minecraft:explosion_resistance": 5, //爆炸抗性
+      "minecraft:on_player_placing": {
+        "event": "update_rotation"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('stair:rotation') == 2",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('stair:rotation') == 3",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            -180,
+            0
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('stair:rotation') == 4",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            90,
+            0
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('stair:rotation') == 5",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            -90,
+            0
+          ]
+        }
+      }
+    ],
+
+    "events": {
+      "palae:step_off": {
+
+      },
+      "palae:on_tick": {
+
+      },
+      "palae:step_on": {
+
+      },
+      "update_rotation": {
+
+      },
+      "palae:on_random_tick": {
+
+      },
+      "palae:on_destroy": {
+
+      },
+      "palae:placed": {
+
+      }
+    }
+  }
+}

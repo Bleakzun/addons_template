@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "命名空间:合成表名"
+    },
+
+    
+    "tags": [ "crafting_table" ],//表示是工作台合成
+    "pattern": [//物品在工作台上的摆放，可用任何大写字母代替物品，若为空格则在工作台中代表留空
+      "XXX",
+      "XXX",
+      " # "
+    ],
+    "key": {//表明各个字母代表什么物品
+      "#": {
+        "item": "物品组名:物品名"
+      },
+      "X": {
+        "item": "物品组名:物品名"
+      }
+    },
+    "result": {
+      "item": "物品组名:物品名"//输出物品
+    }
+  }
+}

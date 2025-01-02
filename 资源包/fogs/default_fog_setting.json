@@ -1,0 +1,41 @@
+{
+  "minecraft:fog_settings" : {
+    "distance" : {
+      "lava" : { //岩浆
+        "fog_color" : "#7E1500",
+        "render_distance_type" : "fixed",
+        "fog_start" : 0, //依赖于渲染距离
+        "fog_end" : 0.64
+      },
+      "lava_resistance" : { //喝了抗性药水之后下岩浆
+        "fog_color" : "#7E1500",
+        "render_distance_type" : "fixed",
+        "fog_start" : 2, //依赖于方块距离（单位为方块）
+        "fog_end" : 4
+      },
+      "air" : { //空气里的雾
+        "fog_color" : "#ABD2FF",
+        "render_distance_type" : "render",
+        "fog_start" : 0.92, //依赖于渲染距离
+        "fog_end" : 1
+      },
+      "water" : { //水雾
+        "fog_color" : "#567E84",
+        "render_distance_type" : "fixed",
+        "fog_start" : 0,  //依赖于方块距离（单位为方块）
+        "fog_end" : 15
+      },
+      "weather" : { //雨雾
+        "fog_color" : "#666666",
+        "render_distance_type" : "render",
+        "fog_start" : 0.23,  //依赖于渲染距离
+        "fog_end" : 0.7
+      }
+    },
+    "description" : {
+      "identifier" : "test:fog_default"
+    }
+  },
+  "format_version" : "1.16.100"
+}
+        //如果想换群系就把文件名前面的default改成群系名，相关文件内引用全改掉

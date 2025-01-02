@@ -1,0 +1,18 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "", //资源包名字
+    "description": "", //资源包简介
+    "min_engine_version": [ 1, 10, 0 ], //该字段指定了适配的最低mc版本
+    "uuid": "", //uuid采用十六进制
+    "version": [ 0, 0, 1 ] //资源包的版本
+  },
+  "modules": [//模块，可拥有多个
+    {
+      "description": "", //模块简介
+      "type": "", //"data"表示该包为行为包，"resources"则表示该包为纹理包，添加类型为"interface"模块的附加包在装载进世界后不可卸下。
+      "uuid": "",//模块uuid，每个模块的的 uuid 都应该各不相同
+      "version": [ 0, 0, 1 ] //模块版本
+    }
+  ]
+}

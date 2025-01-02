@@ -1,0 +1,17 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "", //世界名字
+    "uuid": "", //uuid采用十六进制
+    "lock_template_options": false, //锁定世界模式
+    "version": [ 0, 0, 1 ] //资源包的版本
+  },
+  "modules": [
+    {
+      "description": "", //子资源包简介
+      "type": "world_template", 
+      "uuid": "",
+      "version": [ 0, 0, 1 ] //子资源包版本
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+music_definitions定义什么时候播放什么音乐
+sound_definitions定义音乐在文件夹的路径

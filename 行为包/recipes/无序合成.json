@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "命名空间:合成表名"
+    },
+    "tags": [ "crafting_table" ], //表示是工作台合成
+    "ingredients": [//合成所需的物品，可重复
+      {
+        "item": "物品组名:物品名"
+      },
+      {
+        "item": "物品组名:物品名"
+      }
+    ],
+    "result": {
+      "item": "物品组名:物品名" //输出物品
+    }
+  }
+}

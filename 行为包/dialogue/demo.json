@@ -1,0 +1,46 @@
+{
+    "format_version": "1.17.0",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "",//场景名字
+                "npc_name": {//npc名字
+                    "rawtext": []
+                },
+                "text": {
+                    "rawtext": []//场景文字
+                },
+                "buttons": [//最多可以存在6按钮
+                    {
+                        "name":"",//按钮文字
+                        "commands": [
+                            //按钮执行的命令
+                        ]
+                    },
+                    {
+                        "name": {
+                            "rawtext": []
+                        },
+                        "commands": [
+
+                        ]
+                    }
+                ],
+                "on_close_commands": [
+                    //关闭此场景时执行的命令
+                ],
+                "on_open_commands": [
+                    //打开此场景时执行的命令
+                ]
+            },
+            {//另一个场景，一个json文件可以定义多个场景
+                "scene_tag":"",
+                "npc_name":"",
+                "text":"",
+                "buttons": [
+
+                ]
+            }
+        ]
+    }
+}

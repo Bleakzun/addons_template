@@ -1,0 +1,48 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "test:npc",
+			//实体识别符
+			"runtime_identifier": "test:npc",
+			"is_spawnable": true,
+			//是否自然生成
+			"is_summonable": true,
+			//是否可用/summon生成
+			"is_experimental": false
+			//是否为实验性生物，如开启，则需开启实验性玩法才可生成
+		},
+		"components": {
+			//组件
+			"minecraft:type_family": {
+				"family": [ "test", "npc" ]
+			},
+			"minecraft:health": {
+				//血量
+				"value": 10,
+				//初始值
+				"max": 10
+				//最大值
+			},
+			"minecraft:movement": {
+				//移动速度
+				"value": 0.25
+				//值
+			},
+			"minecraft:behavior.trade_with_player": {//和玩家交易
+				"priority": 1
+			  },
+			  "minecraft:behavior.look_at_trading_player": {//交易时看着玩家
+				"priority": 1
+			  },
+			  "minecraft:economy_trade_table": {
+				"display_name": "entity.touhou:rumia.name",//交易时显示的名称
+				"table": "trading/rumia_trades.json",//交易表的路径
+				"convert_trades_economy": true,
+				"new_screen": true
+			  },
+			"minecraft:physics": {}
+			 //重力
+		}
+	}
+}

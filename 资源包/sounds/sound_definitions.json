@@ -1,0 +1,37 @@
+{
+    "music.game": {
+    "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/bgm1",
+          "stream": true,
+          "volume": 0.1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/bgm2",
+          "stream": true,
+          "volume": 0.1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/bgm3",
+          "stream": true,
+          "volume": 0.1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/bgm4",
+          "stream": true,
+          "volume": 0.1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/bgm5",
+          "stream": true,
+          "volume": 0.1,
+          "load_on_low_memory": true
+        }
+      ]
+  }
+}
