@@ -9,7 +9,7 @@
   "modules": [
     {
       "description": "", //子资源包简介
-      "type": "world_template", 
+      "type": "world_template",
       "uuid": "",
       "version": [ 0, 0, 1 ] //子资源包版本
     }
