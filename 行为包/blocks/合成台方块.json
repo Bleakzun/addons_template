@@ -13,7 +13,7 @@
           6
         ]
       },
-      "identifier": "palae:pcrinstu"
+      "identifier": "命名空间:方块名"
     },
     "components": {
       "minecraft:friction": 0.6, //摩擦力
@@ -70,10 +70,10 @@
       },
       "minecraft:crafting_table": {
         "grid_size": 3,
-        "custom_description": "PCR扩增", //定义合成界面显示的标题
+        "custom_description": "xx合成台", //定义合成界面显示的标题
         "crafting_tags": [ //定义合成配方的标签，可同时拥有多个标签
           "crafting_table",
-          "pcrinstu"
+          "xxx"
         ]
       },
       "minecraft:on_step_off": {

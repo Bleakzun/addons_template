@@ -1,19 +1,23 @@
-{ 
+{
   "format_version": "1.12",
-  "minecraft:recipe_furnace": 
-    {
-       "description": {
-        "identifier": "minecraft:furnace_beef"
-          },
-        "tags": ["furnace", "smoker", "campfire","soul_campfire"],  //该物品可以在哪些容器被烧制，目前仅有五个：熔炉，高炉，烟熏炉，营火，灵魂营火
-        "input": {
-          "item": "minecraft:beef",  //输入物品
-          "data": 0,  //输入物品的数据值，即特殊值
-          "count": 1  //输入物品的数量
-         },
-      "output": {
-        "item": "minecraft:cooked_beef", //输出物品
-        "data": 1 //输出物品的数据值，即特殊值
-      }
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "minecraft:furnace_beef"
+    },
+    "tags": [
+      "furnace",
+      "smoker",
+      "campfire",
+      "soul_campfire"
+    ], //该物品可以在哪些容器被烧制，目前仅有五个：熔炉，高炉，烟熏炉，营火，灵魂营火
+    "input": {
+      "item": "minecraft:beef", //输入物品
+      "data": 0, //输入物品的数据值，即特殊值
+      "count": 1 //输入物品的数量
+    },
+    "output": {
+      "item": "minecraft:cooked_beef", //输出物品
+      "data": 1 //输出物品的数据值，即特殊值
     }
- }
+  }
+}

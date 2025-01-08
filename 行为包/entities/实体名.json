@@ -2,9 +2,10 @@
 	"format_version": "1.8.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "test:npc",
+			"identifier": "命名空间:实体名",
 			//实体识别符
-			"runtime_identifier": "test:npc",
+			"runtime_identifier": "minecraft:(原版实体ID)",
+			//运行时ID
 			"is_spawnable": true,
 			//是否自然生成
 			"is_summonable": true,
@@ -14,8 +15,8 @@
 		},
 		"components": {
 			//组件
-			"minecraft:type_family": {
-				"family": [ "test", "npc" ]
+			"minecraft:type_family": {//实体族
+				"family": [ "test", "xxx" ]
 			},
 			"minecraft:health": {
 				//血量
